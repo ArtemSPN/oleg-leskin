@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+* {
+    box-sizing: border-box;
+  }
+
+
+
+body {
+    background-color: rgba(197, 153, 96, 0.699);
+    color: #0f141e;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+
+}
+
+
+
+.avatar {
+    border-radius: 28px;
+
+}
+
+.name {
+    font-size: 40px;
+    font-style: italic;
+   
+}
+
+.info {
+    background-color: rgb(123, 158, 40);
+    border-radius: 20px;
+    padding: 15px 20px;
+    border: 7px solid rgb(84, 51, 99);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        display: block
+    }
+
+    .container_2 {
+        display: block
+    }
+
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}  
+
+
+a {
+   color: gray;
+   text-decoration: none; 
+   font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+    font-style: italic;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-green {
+   background: #e5ffe7;
+}
+
+.bg-red {
+  background: #ffe5e5;  
+}
+
+
+.container_2 {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 1000px;
+}
+
+header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.text-info {
+    margin-left: 40px;
+}
+.sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .sidebar > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .sidebar h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+  }
+  
+  .main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .main-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  button:hover {
+    color: #222;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .container .controls button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+  }
+  
+  .container .controls .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .container .controls .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
